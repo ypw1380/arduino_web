@@ -1,0 +1,18 @@
+<h1>Test</h1>
+<div class="row">
+
+  <div class="col-md-1"><button type="button" class="btn btn-success"><%= link_to "UP", :controller => "arduino", :action => "up" %></button></div>
+
+  <div class="col-md-1"><button type="button" class="btn btn-success"><%= link_to "DOWN", :controller => "arduino", :action => "down" %></button></div>
+
+  <div class="col-md-1"><button type="button" class="btn btn-success"><%= link_to "LEFT", :controller => "arduino", :action => "left" %></button></div>
+
+  <div class="col-md-1"><button type="button" class="btn btn-success"><%= link_to "RIGHT", :controller => "arduino", :action => "right" %></button></div> 
+
+  <div class="col-md-1"><button type="button" class="btn btn-success"><%= link_to "LED ON", :controller => "arduino", :action => "on" %></button></div> 
+
+  <div class="col-md-1"><button type="button" class="btn btn-success"><%= link_to "LED OFF", :controller => "arduino", :action => "off" %></button></div> 
+  
+</div>
+
+<h1><%= @servo.position %></h1>
