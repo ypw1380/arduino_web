@@ -1,5 +1,6 @@
 class ArduinoController < ApplicationController
 
+before_filter :authorize, only: [:new]
 before_filter :set_up_servo
 
   def index
