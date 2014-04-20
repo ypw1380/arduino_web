@@ -3,6 +3,11 @@ class ArduinoController < ApplicationController
 before_filter :authorize, only: [:new]
 before_filter :set_up_servo
 
+# These are all functions that are not representative of our final controller methods
+# All of these methods are here to show that 'Arduinos' can be created and controlled by 
+# Calling methods on them.
+# To "get started" visit: https://github.com/austinbv/dino
+# Also please take a look at the config folder, be aware of "DinoRails"
   def index
 
     @led
@@ -11,6 +16,8 @@ before_filter :set_up_servo
   end
 
   def up
+
+# The following methods on instances of 'servo' are all the same.  They will loop through positions on 
 
     for i in 1..5
     @servo.position = i
